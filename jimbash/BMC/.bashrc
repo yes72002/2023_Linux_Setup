@@ -49,14 +49,16 @@ if [[ $iatest -gt 0 ]]; then bind "set completion-ignore-case on"; fi
 if [[ $iatest -gt 0 ]]; then bind "set show-all-if-ambiguous On"; fi
 
 # Set the default editor
-export EDITOR=nvim
-export VISUAL=nvim
+export EDITOR=vi
+export VISUAL=vi
 alias pico='edit'
 alias spico='sedit'
 alias nano='edit'
 alias snano='sedit'
-alias vim='nvim'
-alias cat='batcat'
+alias vim='vi'
+alias vi='vi'
+alias cat='cat'
+# alias cat='batcat'
 
 # To have colors for ls and all grep commands such as grep, egrep and zgrep
 export CLICOLOR=1
@@ -121,9 +123,9 @@ alias cls='clear'
 alias apt-get='sudo apt-get'
 alias multitail='multitail --no-repeat -c'
 alias freshclam='sudo freshclam'
-# alias vi='nvim'
+# alias vi='nvi'
 # alias svi='sudo vi'
-# alias vis='nvim "+set si"'
+# alias vis='nvi "+set si"'
 alias so='source ~/.bashrc'
 alias py='python3'
 
@@ -248,8 +250,8 @@ else
 	echo "can't found the autojump script"
 fi
 
-eval "$(oh-my-posh init bash --config /root/.cache/oh-my-posh/themes/pure.omp.json)"
-eval "$(oh-my-posh init bash --config /root/.cache/oh-my-posh/themes/probua.minimal.omp.json)"
+# eval "$(oh-my-posh init bash --config /root/.cache/oh-my-posh/themes/pure.omp.json)"
+# eval "$(oh-my-posh init bash --config /root/.cache/oh-my-posh/themes/probua.minimal.omp.json)"
 # source /etc/profile.d/bash_completion.sh
 
 shopt -s direxpand
