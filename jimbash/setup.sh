@@ -103,6 +103,7 @@ linkConfig() {
     ## Make symbolic link.
     ln -svf ${GITPATH}/.bashrc ${USER_HOME}/.bashrc
     # ln -svf ${GITPATH}/starship.toml ${USER_HOME}/.config/starship.toml
+    ln -svf ${GITPATH}/inputrc ${USER_HOME}/etc/inputrc
 }
 
 checkEnv
