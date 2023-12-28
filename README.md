@@ -23,14 +23,17 @@ In the `BMC` console or ssh console
 </code></pre>
 
 In the `local` (where the BMC/ download)
-<pre><code># scp -r ./BMC root@<BMC_IP>:~/github/jimbash/
+<pre><code># cd jimbash
+# scp -r ./BMC root@<BMC_IP>:~/github/jimbash/
 </code></pre>
 
 In the `BMC` console or ssh console
-<pre><code># ls
+<pre><code># ls -la
 # cd BMC
+# ls -la
 # chmod 777 *
-# ./jim_bmc_setup.sh
 # sed -i 's/\r//g' *
+# sed -i 's/\r//g' .bashrc
+# ./jim_bmc_setup.sh
 # source ~/.bashrc
 </code></pre>
