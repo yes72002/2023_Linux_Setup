@@ -126,6 +126,7 @@ alias svi='sudo vi'
 alias vis='nvim "+set si"'
 alias so='source ~/.bashrc'
 alias py='python3'
+alias gs='git status'
 
 # Change directory aliases
 alias home='cd ~'
