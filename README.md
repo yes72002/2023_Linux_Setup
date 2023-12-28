@@ -37,3 +37,4 @@ In the `BMC` console or ssh console
 # ./jim_bmc_setup.sh
 # source ~/.bashrc
 </code></pre>
+BMC need to `source ~/.bashrc` every time loggin
