@@ -13,8 +13,6 @@ fi
 # Enable bash programmable completion features in interactive shells
 if [ -f /usr/share/bash-completion/bash_completion ]; then
 	. /usr/share/bash-completion/bash_completion
-elif [ -f /etc/bash_completion ]; then
-	. /etc/bash_completion
 fi
 
 #######################################################
@@ -241,19 +239,8 @@ export PATH=$PATH:"$HOME/.local/bin:$HOME/.cargo/bin:/var/lib/flatpak/exports/bi
 
 # eval "$(starship init bash)"
 
-#Autojump
-
-if [ -f "/usr/share/autojump/autojump.sh" ]; then
-	. /usr/share/autojump/autojump.sh
-elif [ -f "/usr/share/autojump/autojump.bash" ]; then
-	. /usr/share/autojump/autojump.bash
-else
-	echo "can't found the autojump script"
-fi
-
 # eval "$(oh-my-posh init bash --config /root/.cache/oh-my-posh/themes/pure.omp.json)"
 # eval "$(oh-my-posh init bash --config /root/.cache/oh-my-posh/themes/probua.minimal.omp.json)"
-# source /etc/profile.d/bash_completion.sh
 
 shopt -s direxpand
 
