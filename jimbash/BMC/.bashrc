@@ -128,6 +128,7 @@ alias freshclam='sudo freshclam'
 # alias vis='nvi "+set si"'
 alias so='source ~/.bashrc'
 alias py='python3'
+alias gs='git status'
 
 # Change directory aliases
 alias home='cd ~'
