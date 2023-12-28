@@ -102,6 +102,8 @@ linkConfig() {
     echo -e "${YELLOW}Linking new bash config file...${RC}"
     ## Make symbolic link.
     ln -svf ${GITPATH}/.bashrc ${USER_HOME}/.bashrc
+    ln -svf ${GITPATH}/.vimrc ${USER_HOME}/.vimrc
+    ln -svf ${GITPATH}/init.vim ${USER_HOME}/.config/nvim/init.vim
     # ln -svf ${GITPATH}/starship.toml ${USER_HOME}/.config/starship.toml
     ln -svf ${GITPATH}/inputrc /etc/inputrc
 }
